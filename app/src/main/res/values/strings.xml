@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FoodOrder</string>
+    <string name="descriptionfood">A hamburger (or burger for short) is a food consisting of fillings —usually a patty of ground meat.</string>
+    <string name="order_now">Order Now</string>
+    <string name="update_now">Update Now</string>
+    <string name="details_price_amt">70</string>
+    <string name="rs">RS.</string>
+    <string name="qty">1</string>
+</resources>
