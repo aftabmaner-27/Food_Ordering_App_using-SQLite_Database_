@@ -34,9 +34,7 @@ public class DBHelper extends SQLiteOpenHelper {
                         "quantity int ," +
                         "description text," +
                         "foodname text)"
-
         );
-
     }
 
     @Override
@@ -56,7 +54,6 @@ public class DBHelper extends SQLiteOpenHelper {
         desc =5
         foodname = 6
         Quantity = 7
-
          */
         values.put("name",name);
         values.put("phone",phone);
@@ -71,7 +68,6 @@ public class DBHelper extends SQLiteOpenHelper {
       }else {
           return true;
       }
-
     }
 
     // SELECT GET ORDERS SHOW ON MY ORDERS------------------------------------------------------------------------------
@@ -93,9 +89,7 @@ public class DBHelper extends SQLiteOpenHelper {
         cursor.close();
         database.close();
         return orders;
-
     }
-
 
 // SELECT ORDERD ITEM CLICK ON UPDATE ACTIVITY
   public Cursor getOrderById(int id){
@@ -104,13 +98,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
         if (cursor != null)
             cursor.moveToFirst();
-
-
         return cursor;
-
-
     }
-
 
     //UPDATE ORDER ON DATABASE RUNTIME.......
   public boolean updateOrder(String name, String phone, int price, int image, String desc, String foodname, int quantity,int id) {
@@ -123,9 +112,7 @@ public class DBHelper extends SQLiteOpenHelper {
         image =4
         desc =5
           Quantity = 7
-        foodname =6
-
-         */
+        foodname =6     */
 
         values.put("name",name);
         values.put("phone",phone);
@@ -134,26 +121,19 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put("description",desc);
         values.put("foodname",foodname);
         values.put("quantity",quantity);
-
         long row =  database.update("orders",values,"id="+id,null );
         if (row <= 0){
             return false;
         }else {
             return true;
         }
-
     }
-
-
 
 //DELETE ORDER FROM DATABASE -----------------------------------------------------------------------
 public int deleteOrder(String id){
         SQLiteDatabase database =  this.getWritableDatabase();
         return database.delete("orders","id="+id,null);
-
-}
-
-
+      }
     }
 
 

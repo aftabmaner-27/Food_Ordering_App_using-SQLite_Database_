@@ -26,7 +26,6 @@ public class Login_Activity extends AppCompatActivity {
     private SQLiteOpenHelper openHelper;
     private Cursor cursor;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,8 +62,6 @@ public class Login_Activity extends AppCompatActivity {
             }
         });
 
-
-
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +69,5 @@ public class Login_Activity extends AppCompatActivity {
                 finish();
             }
         });
-
     }
 }

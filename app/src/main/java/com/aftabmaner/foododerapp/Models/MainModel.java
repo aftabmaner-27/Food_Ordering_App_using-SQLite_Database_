@@ -4,7 +4,6 @@ public class MainModel {
     // VARIABLE INITIALIZING ON [activity_sample_main_food.xml]..................................................
     int image;
     String name, price, description;
- //--------------------------------------------------------------------------------------------------------------
 
 // THEN CREATE CONSTRUCTOR ON INITIALIZE VARIABLE [PRES Alt + Insert ] SELECT CONSTRUCTOR .........................
 
@@ -14,7 +13,6 @@ public class MainModel {
         this.price = price;
         this.description = description;
     }
-//---------------------------------------------------------------------------------------------------------------
 
   //THEN GENERATE GETTER AND SETTER [PRES Alt + Insert ] SELECT GETTER AND SETTER ..............................
 
@@ -50,9 +48,5 @@ public class MainModel {
         this.description = description;
     }
 
-
-
-    //-----------------------------------------------------------------------------------------------------------------------
-    // ...................................MAIN_MODEL CLASS COMPLETED...........................................
 }
 

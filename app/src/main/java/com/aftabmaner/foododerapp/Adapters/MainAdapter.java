@@ -21,8 +21,6 @@ import java.util.ArrayList;
 
 public class  MainAdapter extends RecyclerView.Adapter<MainAdapter.viewHolder> {
 
- // CREATE OBJECT .........................................
-
     ArrayList<MainModel> list ;
     Context context ;
 
@@ -38,7 +36,6 @@ public class  MainAdapter extends RecyclerView.Adapter<MainAdapter.viewHolder> {
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
        View view = LayoutInflater.from(context).inflate(R.layout.sample_main_food,parent,false);
         return new viewHolder(view);
-
     }
 
     @Override
@@ -63,7 +60,6 @@ public class  MainAdapter extends RecyclerView.Adapter<MainAdapter.viewHolder> {
                 context.startActivity(intent);
             }
         });
-
     }
 
     @Override

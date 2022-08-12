@@ -15,8 +15,6 @@ public class DBHelper_Login_Signup extends SQLiteOpenHelper {
     public static final String COL_4="Gmail";
     public static final String COL_5="Password";
 
-
-
     public DBHelper_Login_Signup(@Nullable Context context) {
         super(context, DATABASE_NAME, null, 1);
     }

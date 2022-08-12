@@ -16,8 +16,8 @@ public class DetailActivity extends AppCompatActivity {
 
     ActivityDetailBinding binding;
 
-TextView value;
-int count = 0;
+//TextView value;
+//int count = 0;
 
     @SuppressLint("DefaultLocale")
     @Override
@@ -26,16 +26,9 @@ int count = 0;
       binding = ActivityDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
-
-
-
         DBHelper helper = new DBHelper(this);
 
         if (getIntent().getIntExtra("type",0) == 1 ) {
-
-//
-
 
             final int image = getIntent().getIntExtra("Image", 0);
             final int price = Integer.parseInt(getIntent().getStringExtra("Price"));
@@ -48,11 +41,6 @@ int count = 0;
             binding.FoodNameLbl.setText(foodname);
             binding.Detaildescription.setText(description);
           //  binding.quantityValue.setText(quantity);
-
-
-
-
-
 
 // SELECTED MENU ITEM  TO ORDER NOW CLICK ON INSERTED DATA ON DATABASE ........................................
 
@@ -73,8 +61,6 @@ int count = 0;
                         Toast.makeText(DetailActivity.this, foodname + " Order Success", Toast.LENGTH_SHORT).show();
                     else
                         Toast.makeText(DetailActivity.this, "Error", Toast.LENGTH_SHORT).show();
-
-
                 }
             });
         }else {

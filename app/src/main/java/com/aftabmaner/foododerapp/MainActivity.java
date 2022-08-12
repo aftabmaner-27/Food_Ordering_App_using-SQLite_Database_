@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
         ArrayList<MainModel> list = new ArrayList<>();
 
         list.add(new MainModel(R.drawable.burgger , "Burger","50","Chicken Burger "));
@@ -37,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
         list.add(new MainModel(R.drawable.vadapav , "Vada Pav","20","Vada Pav"));
         list.add(new MainModel(R.drawable.pnipuri , "Pani Puri","30","Pani Puri"));
         list.add(new MainModel(R.drawable.fried_momos , "Fried Momos","90","Fried Momos"));
-
-
 
         MainAdapter adapter = new MainAdapter(list,this);
         binding.recycleview.setAdapter(adapter);

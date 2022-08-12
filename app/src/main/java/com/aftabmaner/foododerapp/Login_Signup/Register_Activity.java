@@ -29,7 +29,6 @@ public class Register_Activity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         openHelper = new DBHelper_Login_Signup(this);
-
         registerBtn = findViewById(R.id.btnRegLogin);
         gotoLoginBtn = findViewById(R.id.btnGotoLogin);
         regName = findViewById(R.id.etRegName);
@@ -68,8 +67,6 @@ public class Register_Activity extends AppCompatActivity {
         contentValues.put(DBHelper_Login_Signup.COL_3,fPhone);
         contentValues.put(DBHelper_Login_Signup.COL_4,fGmail);
         contentValues.put(DBHelper_Login_Signup.COL_5,fPassword);
-
         long id = db.insert(DBHelper_Login_Signup.TABLE_NAME,null,contentValues);
-
     }
 }
