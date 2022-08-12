@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AFTAB 27/Projects/FOOD ORDER APP/app/src/main/res/drawable/btn_background.xml" value="0.1945" />
+        <entry key="..\:/AFTAB 27/Projects/FOOD ORDER APP/app/src/main/res/drawable/order_or_update_btn.xml" value="0.1945" />
+        <entry key="..\:/AFTAB 27/Projects/FOOD ORDER APP/app/src/main/res/layout/activity_detail.xml" value="0.203125" />
+        <entry key="..\:/AFTAB 27/Projects/FOOD ORDER APP/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/AFTAB 27/Projects/FOOD ORDER APP/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/AFTAB 27/Projects/FOOD ORDER APP/app/src/main/res/layout/activity_register.xml" value="0.203125" />
+        <entry key="..\:/AFTAB 27/Projects/FOOD ORDER APP/app/src/main/res/layout/activity_splash_screen.xml" value="0.203125" />
         <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/drawable/btn_background.xml" value="0.1955" />
         <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/drawable/edttext_background.xml" value="0.1505" />
         <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/drawable/order_or_update_btn.xml" value="0.1955" />
@@ -16,7 +23,7 @@
         <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/layout/activity_order.xml" value="0.25" />
         <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/layout/activity_register.xml" value="0.22" />
-        <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
         <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/layout/activity_upadte.xml" value="0.20416666666666666" />
         <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/layout/order_sample.xml" value="0.33" />
         <entry key="..\:/AFTAB 27/Projects/FOODODERAPP/app/src/main/res/layout/sample_main_food.xml" value="0.25" />

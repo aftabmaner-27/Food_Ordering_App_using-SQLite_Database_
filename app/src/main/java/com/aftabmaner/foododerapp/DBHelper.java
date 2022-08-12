@@ -78,7 +78,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public ArrayList<OrderModel> getOrders() {
         ArrayList<OrderModel> orders = new ArrayList<>();
         SQLiteDatabase database = getWritableDatabase();
-        Cursor cursor = database.rawQuery("Select id,foodname,image,price from orders", null);
+        Cursor cursor = database.rawQuery("Select id,foodname,image,price,quantity from orders", null);
         if (cursor.moveToFirst()) {
             while (cursor.moveToNext()) {
                 OrderModel model = new OrderModel();
@@ -86,6 +86,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 model.setSold_oder_item_Name(cursor.getString(1));
                 model.setOrderimage(cursor.getInt(2));
                 model.setPrice(cursor.getInt(3) + "");
+               // model.setQty(cursor.getInt(4)+"");
                 orders.add(model);
             }
         }
@@ -146,10 +147,11 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
 //DELETE ORDER FROM DATABASE -----------------------------------------------------------------------
-   public  int deleteOrder (String id){
-       SQLiteDatabase database = this.getWritableDatabase();
-       return database.delete("orders","id"+id,null);
-   }
+public int deleteOrder(String id){
+        SQLiteDatabase database =  this.getWritableDatabase();
+        return database.delete("orders","id="+id,null);
+
+}
 
 
     }

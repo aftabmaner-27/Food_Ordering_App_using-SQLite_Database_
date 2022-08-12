@@ -81,7 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
-                android:background="@drawable/btn_background"
+                android:background="@drawable/order_or_update_btn"
                 android:clickable="true"
                 android:text="LOGIN"
                 android:textAllCaps="false"

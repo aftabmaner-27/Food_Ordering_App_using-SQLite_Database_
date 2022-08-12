@@ -6,6 +6,7 @@ public class OrderModel {
     String sold_oder_item_Name;
     String price;
     String ordernumber ;
+   // String qty;
     //--------------------------------------------------------------------------------------------------------------
     // THEN CRATE CONSTRUCTOR ON INITIALIZE VARIABLE [PRES Alt + Insert ] SELECT CONSTRUCTOR .........................
 
@@ -14,6 +15,7 @@ public class OrderModel {
         this.sold_oder_item_Name = sold_oder_item_Name;
         this.price = price;
         this.ordernumber = ordernumber;
+       // this.qty =qty;
     }
     //--------------------------------------------------------------------------------------------------------------
 
@@ -50,6 +52,14 @@ public class OrderModel {
     public void setOrdernumber(String ordernumber) {
         this.ordernumber = ordernumber;
     }
+
+//    public String getQty() {
+//        return qty;
+//    }
+//
+//    public void setQty(String qty) {
+//        this.qty = qty;
+//    }
 
     //-----------------------------------------------------------------------------------------------------------------------
     // ...................................ORDER_MODEL CLASS COMPLETED.........................................

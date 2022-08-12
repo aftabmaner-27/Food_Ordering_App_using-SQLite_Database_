@@ -53,14 +53,14 @@
                     android:layout_width="101dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:contentDescription="TODO"
+                    android:onClick="decrement"
                     android:padding="5dp"
                     android:scaleType="fitEnd"
                     app:srcCompat="@drawable/minus"
                     tools:ignore="ImageContrastCheck" />
 
                 <TextView
-                    android:id="@+id/quantity"
+                    android:id="@+id/quantity_value"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -75,6 +75,7 @@
                     android:layout_width="101dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
+                    android:onClick="increment"
                     android:padding="5dp"
                     android:scaleType="fitStart"
                     app:srcCompat="@drawable/add" />

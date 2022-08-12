@@ -67,23 +67,23 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.viewHolder
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                new AlertDialog.Builder(context)
+               new AlertDialog.Builder(context)
                         .setTitle("Delete Order")
                         .setIcon(R.drawable.ic_baseline_delete_sweep_24)
                         .setMessage("Are You Want To Delete This Order")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
-                            public void onClick(DialogInterface dialog, int which) {
+                            public void onClick(DialogInterface dialog, int i) {
                                 DBHelper helper = new DBHelper(context);
                                 if( helper.deleteOrder(model.getOrdernumber()) > 0){
-                                    Toast.makeText(context, "DELETED", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(context, " ORDER DELETED", Toast.LENGTH_SHORT).show();
                                 }else {
-                                    Toast.makeText(context, "ERRORS", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(context, "Already Deleted Press Back Again Open My Orders", Toast.LENGTH_LONG ).show();
                                 }
                             }
                         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
                             @Override
-                            public void onClick(DialogInterface dialog, int which) {
+                            public void onClick(DialogInterface dialog, int i) {
                                 dialog.cancel();
                             }
                         }).show();
